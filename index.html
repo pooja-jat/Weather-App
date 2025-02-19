@@ -5,17 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
+    <h1>Weather App</h1>
     <div class="main">
-      <h1>Weather App</h1>
-      <div class="container">
-        <input id="input" type="text" />
-        <button>get</button>
+      <div class="input-container">
+        <input id="input" />
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </div>
-      <h2 id="city">city:</h2>
-      <h3 id="temp">temperature:</h3>
+      <div class="header-container">
+        <div class="hc-left">
+          <span id="temp">21°C</span>
+          <span id="city">Indore</span>
+          <span id="condition_text">Clear Mist</span>
+        </div>
+        <div class="hc-right">
+          <div>
+            <span><i class="fa-solid fa-wind"></i></span>
+            <span id="wind_speed">288kph</span>
+          </div>
+          <div>
+            <span><i class="fa-regular fa-compass"></i></span>
+            <span id="wind_direction">N</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="air-quality-container">
+        <div>
+          <span id="co">425.5</span>
+          <span>CO</span>
+        </div>
+        <div>
+          <span id="no2">425.5</span>
+          <span>NO2</span>
+        </div>
+        <div>
+          <span id="o3">425.5</span>
+          <span>O3</span>
+        </div>
+        <div>
+          <span id="so2">425.5</span>
+          <span>SO2</span>
+        </div>
+      </div>
     </div>
+
     <script src="main.js"></script>
   </body>
 </html>
