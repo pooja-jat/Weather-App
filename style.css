@@ -139,7 +139,7 @@ button {
     padding: 10px;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -148,8 +148,16 @@ button {
     align-items: center;
     text-align: center;
     padding: 10px;
+    gap: 10px;
   }
-
+ .air-quality-container{
+  width: 200px;
+ display: flex;
+ align-items: center;
+justify-content: center;
+flex-direction: column;
+margin: 0;
+ }
  
 
 }
